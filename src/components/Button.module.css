@@ -1,0 +1,36 @@
+.nextBtn {
+    background-color: var(--marine-blue);
+    color: var(--white);
+    padding: 1em 2em;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: var(--fw-lg);
+    margin-right: 3em;
+}
+
+.nextBtn:hover {
+    cursor: pointer;
+    background-color: hsl(243, 100%, 62%, 0.7);
+}
+
+.prevBtn {
+    margin: unset;
+    background-color: transparent;
+    border: none;
+    color: var(--cool-gray);
+    font-weight: var(--fw-lg);
+    text-transform: capitalize;
+}
+
+.prevBtn:hover {
+    color: var(--marine-blue);
+    font-weight: var(--fw-lg);
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .nextBtn {
+        margin-right: 0;
+    }
+}

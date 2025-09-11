@@ -1,0 +1,31 @@
+form {
+    position: relative;
+}
+
+.hide-el {
+    opacity: 0;
+}
+
+.hide-navbtn {
+    display: none;
+}
+
+@media (max-width:800px) {
+    #mainpage {
+        display: flex;
+        transform: translateY(-100px);
+        background-color: var(--white);
+        margin: 0 2em;
+        padding: 0 1em 20px;
+        border-radius: 10px;
+        height: 560px;
+    }
+}
+
+@media (max-width: 450px) {
+    #mainpage {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}

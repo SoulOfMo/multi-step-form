@@ -1,0 +1,19 @@
+.nav {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+@media (max-width:800px) {
+    .nav {
+        background-color: var(--white);
+        padding: 16px;
+        align-items: center;
+    }
+}

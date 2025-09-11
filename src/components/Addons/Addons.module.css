@@ -1,0 +1,63 @@
+.addOns {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.addOns label {
+    padding: 20px;
+    border: 1px solid var(--light-gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.addOns label:has(input:checked) {
+    background-color: var(--magnolia);
+    border: 1px solid var(--marine-blue);
+}
+
+.addOns input[type="checkbox"] {
+    border: unset;
+    width: 20px;
+    margin: unset;
+    margin-right: 20px;
+    accent-color: var(--purplish-blue);
+}
+
+.addOns label:hover {
+    border: 1px solid var(--purplish-blue);
+    cursor: pointer;
+}
+
+.addOns p {
+    margin-bottom: 5px;
+}
+
+.addOnsType {
+    display: flex;
+    flex-direction: row;
+}
+
+.addOnsType p {
+    color: var(--marine-blue);
+    font-weight: var(--fw-lg);
+}
+
+.addOnsType span {
+    color: var(--cool-gray);
+    font-weight: var(--fw-sm);
+}
+
+.addOnsPrice {
+    color: var(--purplish-blue);
+}
+
+
+@media(max-width: 450px) {
+    .addOnsType span {
+        font-size: 14px;
+    }
+}

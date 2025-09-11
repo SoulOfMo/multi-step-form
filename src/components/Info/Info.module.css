@@ -1,0 +1,47 @@
+/* PERSONAL INF0 */
+
+/* Form Input */
+.personalInfo label {
+    display: block;
+    margin-bottom: 1.2em;
+    font-weight: var(--fw-md);
+}
+
+.personalInfo input {
+    height: 3em;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 7px;
+    padding-left: 0.8em;
+    border: 1px solid var(--light-gray);
+    outline: none;
+    font-weight: var(--fw-lg);
+}
+
+.personalInfo ::placeholder {
+    font-weight: var(--fw-md);
+    color: var(--cool-gray);
+}
+
+label span {
+    display: flex;
+    justify-content: space-between;
+}
+
+label span.errMsg {
+    color: var(--strawberry-red);
+    opacity: 0;
+}
+
+.personalInfo input:is(:active, :hover) {
+    border: 2px solid var(--purplish-blue);
+    cursor: pointer;
+}
+
+label.error input {
+    border: 2px solid var(--strawberry-red);
+}
+
+label.error .errMsg {
+    opacity: 1;
+}

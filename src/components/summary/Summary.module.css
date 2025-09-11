@@ -1,0 +1,18 @@
+#summary hr {
+    margin: 30px 0;
+    border: solid 1px var(--light-gray);
+}
+
+.summarInfo {
+    text-align: center;
+}
+
+.summaryInfo img {
+    margin: 180px auto 20px;
+    width: 80px;
+}
+
+.summaryInfo p {
+    margin: 16px auto 0;
+    width: 400px;
+}

@@ -1,0 +1,57 @@
+.planSummaryDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: var(--ff-lg);
+    text-transform: capitalize;
+}
+
+.addOnsPicked {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.addOnsType {
+    display: inherit;
+    justify-content: space-between;
+}
+
+.addOnType {
+    color: var(--cool-gray);
+}
+
+.changePlan {
+    padding-top: 5px;
+    color: var(--light-gray);
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: var(--ff-sm);
+}
+
+.changePlan:hover {
+    cursor: pointer;
+    color: var(--purplish-blue);
+    font-weight: var(--ff-md);
+}
+
+.totalPrice {
+    margin: 32px 12px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--cool-gray);
+
+
+}
+
+.totalAmount {
+    color: var(--purplish-blue);
+    font-weight: var(--ff-lg);
+}
+
+/* SUMMARY SECTION */
+
+hr {
+    margin: 30px 0;
+    border: solid 1px var(--light-gray);
+}

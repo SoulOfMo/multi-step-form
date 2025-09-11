@@ -1,0 +1,127 @@
+/* SECOND PAGE  || Plan section */
+
+#plans {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.plan {
+    border: 1px solid var(--light-gray);
+    padding: 1em 2em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+label.plan:hover {
+    outline: 2px solid var(--purplish-blue);
+    cursor: pointer;
+}
+
+label.plan div {
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.plan img {
+    width: 40px;
+}
+
+.plan p {
+    margin: unset;
+    color: var(--marine-blue);
+    font-weight: var(--fw-md);
+    font-size: 1.2rem;
+}
+
+.plan span {
+    color: var(--cool-gray);
+    font-size: 0.8rem;
+}
+
+#plans input[type="radio"]:checked~label {
+    background-color: var(--magnolia);
+    border: 1px solid var(--purplish-blue);
+}
+
+span.free {
+    color: var(--marine-blue)
+}
+
+.period {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--magnolia);
+    padding: 15px 0;
+    max-height: 45px;
+    border-radius: 10px;
+    margin-top: 2em;
+    align-items: center;
+}
+
+.period p {
+    font-size: 0.8rem;
+    margin: 3px 30px;
+}
+
+.period p:hover {
+    color: var(--purplish-blue);
+}
+
+.period p.activePlan {
+    color: var(--marine-blue);
+    font-weight: var(--fw-lg);
+}
+
+.toggle {
+    height: 22px;
+    padding: 2px;
+    width: 40px;
+    border-radius: 1em;
+    background: var(--marine-blue);
+}
+
+.slider {
+    width: 18px;
+    height: 18px;
+    background-color: var(--white);
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.sliderActive {
+    transform: translateX(100%);
+}
+
+@media (max-width: 600px) {
+    #plans {
+        width: 100%;
+    }
+
+    .plans {
+        display: inherit;
+        flex-direction: column;
+
+    }
+
+    .plans label {
+        flex-direction: row;
+        justify-content: unset;
+        height: unset;
+        gap: 16px;
+    }
+}

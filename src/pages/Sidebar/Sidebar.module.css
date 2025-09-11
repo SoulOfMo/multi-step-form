@@ -1,0 +1,78 @@
+#sidebar {
+    background-image: url(../../assets/images/bg-sidebar-desktop.svg);
+    padding: 2em;
+    height: 550px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 275px;
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: 7px;
+}
+
+#sidebar div {
+    display: flex;
+}
+
+.btn {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    margin-bottom: 2em;
+    transition: 0.5s all;
+}
+
+#sidebar .btn:hover {
+    cursor: pointer;
+}
+
+.btn-info {
+    flex-direction: column;
+    margin-left: 0.6em;
+}
+
+#sidebar span {
+    color: var(--cool-gray);
+    font-size: 0.8em;
+    display: block;
+}
+
+#sidebar p {
+    font-weight: var(--fw-md);
+    font-size: 0.875em;
+    padding-top: 3px;
+}
+
+.active {
+    border-color: unset;
+    background-color: var(--light-blue);
+    color: var(--marine-blue);
+    border: none;
+    font-weight: var(--fw-lg);
+}
+
+/* Mobile Viewport */
+
+@media (max-width: 800px) {
+    #sidebar {
+        background-image: url(../../assets/images/bg-sidebar-mobile.svg);
+        display: flex;
+        gap: 1em;
+        height: 200px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px;
+    }
+
+    #sidebar .steps {
+        height: min-content;
+    }
+
+    #sidebar .btn-info {
+        display: none;
+    }
+}
