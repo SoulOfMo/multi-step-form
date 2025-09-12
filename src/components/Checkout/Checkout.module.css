@@ -1,8 +1,15 @@
+.checkoutContainer {
+    background-color: var(--magnolia);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
 .planSummaryDetails {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-weight: var(--ff-lg);
+    font-weight: var(--fw-lg);
     text-transform: capitalize;
 }
 
@@ -26,13 +33,13 @@
     color: var(--light-gray);
     text-decoration: underline;
     font-size: 15px;
-    font-weight: var(--ff-sm);
+    font-weight: var(--fw-sm);
 }
 
 .changePlan:hover {
     cursor: pointer;
     color: var(--purplish-blue);
-    font-weight: var(--ff-md);
+    font-weight: var(--fw-md);
 }
 
 .totalPrice {
@@ -46,7 +53,7 @@
 
 .totalAmount {
     color: var(--purplish-blue);
-    font-weight: var(--ff-lg);
+    font-weight: var(--fw-lg);
 }
 
 /* SUMMARY SECTION */

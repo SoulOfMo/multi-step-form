@@ -19,7 +19,7 @@ function Checkout() {
     <div className="page">
       <h1>Finishing up</h1>
       <p>Double-check everything looks OK before confirming.</p>
-      <div>
+      <div className={styles.checkoutContainer}>
         <div className={styles.planSummaryDetails}>
           <div>
             <div className={styles.planSummary}>
@@ -58,9 +58,9 @@ function Checkout() {
         </div>
       </div>
       <div className={styles.totalPrice}>
-        <span>Total {billingPeriod === "yearly" ? "year" : "month"}</span>
+        <span>Total (per {billingPeriod === "yearly" ? "year" : "month"})</span>
         <span className={styles.totalAmount}>
-          {dtotal}/{planDuration}
+          ${dtotal}/{planDuration}
         </span>
       </div>
     </div>

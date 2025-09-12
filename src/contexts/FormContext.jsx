@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 const FormContexts = createContext();
 
 function FormContextProvider({ children }) {
+  const defaultFormData = { fullname: "", email: "", phonenumber: "" };
   const [step, setStep] = useState(() => {
     const storedStep = JSON.parse(localStorage.getItem("step"));
     return storedStep || 1;
@@ -11,7 +12,7 @@ function FormContextProvider({ children }) {
 
   const [formData, setFormData] = useState(() => {
     const storedData = JSON.parse(localStorage.getItem("formData"));
-    return storedData || { fullname: "", email: "", phonenumber: "" };
+    return storedData || defaultFormData;
   });
 
   const [selectedPlan, setSelectedPlan] = useState(() => {
@@ -38,6 +39,20 @@ function FormContextProvider({ children }) {
   }, [formData, step, selectedPlan, billingPeriod]);
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Runs only on mount
+    const isReload =
+      performance.getEntriesByType("navigation")[0].type === "reload";
+
+    if (isReload && step === 5) {
+      localStorage.clear();
+      setStep(1);
+      setFormData(defaultFormData);
+      setSelectedPlan(null);
+      navigate("/");
+    }
+  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
