@@ -20,7 +20,10 @@ function FormContextProvider({ children }) {
     return storedPlan || "arcade";
   });
 
-  const [selectedAddons, setSelectedAddons] = useState([]);
+  const [selectedAddons, setSelectedAddons] = useState(() => {
+    const storedAddons = JSON.parse(localStorage.getItem("selectedAddons"));
+    return storedAddons || [];
+  });
 
   const [billingPeriod, setBillingPeriod] = useState(() => {
     const storedPeriod = JSON.parse(localStorage.getItem("billingPeriod"));
@@ -36,7 +39,8 @@ function FormContextProvider({ children }) {
 
     localStorage.setItem("selectedPlan", JSON.stringify(selectedPlan));
     localStorage.setItem("billingPeriod", JSON.stringify(billingPeriod));
-  }, [formData, step, selectedPlan, billingPeriod]);
+    localStorage.setItem("selectedAddons", JSON.stringify(selectedAddons));
+  }, [formData, step, selectedPlan, billingPeriod, selectedAddons]);
 
   const navigate = useNavigate();
 
