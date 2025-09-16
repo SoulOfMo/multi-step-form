@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/screenshot.png)
+![](./src/assets/screenshot.png)
 
 ### Links
 
@@ -44,12 +44,13 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- React
 
 ### What I learned
 
 ### Continued development
 
-Javascript
+Javascript, react
 
 ### Useful resources
 
