@@ -1,5 +1,5 @@
 import { useFormContext } from "../../contexts/FormContext";
-import styles from "./info.module.css";
+import styles from "./Info.module.css";
 function Info() {
   const { formData, errMsgs, handleChange } = useFormContext();
 
