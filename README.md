@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/SoulOfMo/multi-step-form-main.git)
-- Live Site URL: [Live URL](https://multistep-form-ap.netlify.app/)
+- Solution URL: [Solution URL](https://github.com/SoulOfMo/multi-step-form)
+- Live Site URL: [Live URL](https://multistepform-mo.netlify.app/)
 
 ## My process
 
